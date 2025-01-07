@@ -30,21 +30,21 @@ The Czechoslovakia Bank has provided a dataset containing information about its 
 5. **District**: This table contains information about the various districts in Czechoslovakia. It includes the district ID, the name of the district, and various demographic and economic indicators for the 
    district.
 
-6.**Loan Table**: This table holds critical information regarding the loans issued by the bank. It includes the following key attributes:
+6. **Loan Table**: This table holds critical information regarding the loans issued by the bank. It includes the following key attributes:
 
 - **Loan ID**: A unique identifier for each loan, ensuring individual tracking and management of loan records.
 - **Issue Date**: The date on which the loan was issued to the borrower, which helps track the loan’s term and payment schedule.
 - **Account ID**: The unique identifier of the account associated with the loan, linking the loan record to a specific client or account holder.
 - **Loan Amount**: The total amount of the loan issued, which is essential for financial calculations such as interest, repayment schedules, and loan servicing.
 
-6. **Order Table**: This table stores details about the orders placed by the bank's clients. The key attributes include:
+7. **Order Table**: This table stores details about the orders placed by the bank's clients. The key attributes include:
 
 - **Order ID**: A unique identifier for each order placed, ensuring proper tracking and management of client transactions.
 - **Account ID**: The unique identifier of the account associated with the order, linking the order to a specific client or account holder.
 - **Order Date**: The date on which the order was issued, which helps in managing timelines and tracking order history.
 - **Order Description**: A brief description of the order, providing context about the type of transaction or service requested by the client (e.g., product purchase, service request, etc.).
 
-7. **Transaction**: This table contains information about the transactions made by the bank's clients. It includes the transaction ID, the account ID associated with the transaction, the transaction date, the 
+8. **Transaction**: This table contains information about the transactions made by the bank's clients. It includes the transaction ID, the account ID associated with the transaction, the transaction date, the 
    type of transaction, and the transaction amount.
 
 
