@@ -8,41 +8,42 @@ The Czechoslovakia Bank has provided a dataset containing information about its 
 1. **Account**: This table contains information about the accounts held by the bank's clients. It includes the account ID, the date the account was opened, the associated client ID, and the account type.
 
 2. **Card Table**: This table stores comprehensive details about the bank-issued cards. It includes the following key attributes:
-
-- **Card ID**: A unique identifier for each card issued by the bank.
-- **Issue Date**: The date on which the card was issued to the customer.
-- **Card Type**: The type of card (e.g., Credit, Debit, Prepaid, etc.).
+     - **Card ID**: A unique identifier for each card issued by the bank.
+     - **Issue Date**: The date on which the card was issued to the customer.
+     - **Card Type**: The type of card (e.g., Credit, Debit, Prepaid, etc.).
+ 
 
 3. **Client Table**: This table contains essential details about the bank’s clients, including:
-
-- **Client ID**: A unique identifier assigned to each client for tracking and managing their account-related data.
-- **Birthdate**: The client’s date of birth, used for age verification and demographic analysis.
-- **Gender**: The gender of the client, which can be used for personalized services and statistical reporting.
-- **District**: The geographical district or region where the client resides, helping with location-based services and marketing strategies.
+     - **Client ID**: A unique identifier assigned to each client for tracking and managing their account-related data.
+     - **Birthdate**: The client’s date of birth, used for age verification and demographic analysis.
+     - **Gender**: The gender of the client, which can be used for personalized services and statistical reporting.
+     - **District**: The geographical district or region where the client resides, helping with location-based services and marketing strategies.
+ 
 
 4. **Disposition Table**: This table captures the relationship between clients and their accounts, providing details about the roles or designations a client may hold in relation to a specific account. Key 
    attributes include:
+      - **Disposition ID**: A unique identifier for each disposition record, ensuring traceability and integrity.
+      - **Client ID**: The unique identifier for the client associated with the disposition, linking this record to the relevant client in the **Client Table**.
+      - **Disposition Type**: The role or relationship type a client holds concerning the account (e.g., **Owner**, **Authorized Person**, **Beneficiary**, etc.).
 
-- **Disposition ID**: A unique identifier for each disposition record, ensuring traceability and integrity.
-- **Client ID**: The unique identifier for the client associated with the disposition, linking this record to the relevant client in the **Client Table**.
-- **Disposition Type**: The role or relationship type a client holds concerning the account (e.g., **Owner**, **Authorized Person**, **Beneficiary**, etc.).
 
 5. **District**: This table contains information about the various districts in Czechoslovakia. It includes the district ID, the name of the district, and various demographic and economic indicators for the 
    district.
+   
 
-6. **Loan Table**: This table holds critical information regarding the loans issued by the bank. It includes the following key attributes:
+7. **Loan Table**: This table holds critical information regarding the loans issued by the bank. It includes the following key attributes:
+      - **Loan ID**: A unique identifier for each loan, ensuring individual tracking and management of loan records.
+      - **Issue Date**: The date on which the loan was issued to the borrower, which helps track the loan’s term and payment schedule.
+      - **Account ID**: The unique identifier of the account associated with the loan, linking the loan record to a specific client or account holder.
+      - **Loan Amount**: The total amount of the loan issued, which is essential for financial calculations such as interest, repayment schedules, and loan servicing.
 
-- **Loan ID**: A unique identifier for each loan, ensuring individual tracking and management of loan records.
-- **Issue Date**: The date on which the loan was issued to the borrower, which helps track the loan’s term and payment schedule.
-- **Account ID**: The unique identifier of the account associated with the loan, linking the loan record to a specific client or account holder.
-- **Loan Amount**: The total amount of the loan issued, which is essential for financial calculations such as interest, repayment schedules, and loan servicing.
 
 7. **Order Table**: This table stores details about the orders placed by the bank's clients. The key attributes include:
+      - **Order ID**: A unique identifier for each order placed, ensuring proper tracking and management of client transactions.
+      - **Account ID**: The unique identifier of the account associated with the order, linking the order to a specific client or account holder.
+      - **Order Date**: The date on which the order was issued, which helps in managing timelines and tracking order history.
+      - **Order Description**: A brief description of the order, providing context about the type of transaction or service requested by the client (e.g., product purchase, service request, etc.).
 
-- **Order ID**: A unique identifier for each order placed, ensuring proper tracking and management of client transactions.
-- **Account ID**: The unique identifier of the account associated with the order, linking the order to a specific client or account holder.
-- **Order Date**: The date on which the order was issued, which helps in managing timelines and tracking order history.
-- **Order Description**: A brief description of the order, providing context about the type of transaction or service requested by the client (e.g., product purchase, service request, etc.).
 
 8. **Transaction**: This table contains information about the transactions made by the bank's clients. It includes the transaction ID, the account ID associated with the transaction, the transaction date, the 
    type of transaction, and the transaction amount.
