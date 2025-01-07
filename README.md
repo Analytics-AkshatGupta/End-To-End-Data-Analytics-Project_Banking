@@ -20,15 +20,15 @@ The Czechoslovakia Bank has provided a dataset containing information about its 
 - **Gender**: The gender of the client, which can be used for personalized services and statistical reporting.
 - **District**: The geographical district or region where the client resides, helping with location-based services and marketing strategies.
 
-4. **Disposition Table**: This table captures the relationship between clients and their accounts, providing details about the roles or designations a client may hold in relation to a specific account. Key attributes include:
+4. **Disposition Table**: This table captures the relationship between clients and their accounts, providing details about the roles or designations a client may hold in relation to a specific account. Key 
+   attributes include:
 
 - **Disposition ID**: A unique identifier for each disposition record, ensuring traceability and integrity.
 - **Client ID**: The unique identifier for the client associated with the disposition, linking this record to the relevant client in the **Client Table**.
 - **Disposition Type**: The role or relationship type a client holds concerning the account (e.g., **Owner**, **Authorized Person**, **Beneficiary**, etc.).
 
-This table is fundamental for defining access permissions and understanding the client’s involvement with their bank accounts, which is critical for compliance, security, and customer service purposes.
-
-5. **District**: This table contains information about the various districts in Czechoslovakia. It includes the district ID, the name of the district, and various demographic and economic indicators for the district.
+5. **District**: This table contains information about the various districts in Czechoslovakia. It includes the district ID, the name of the district, and various demographic and economic indicators for the 
+   district.
 
 6.**Loan Table**: This table holds critical information regarding the loans issued by the bank. It includes the following key attributes:
 
@@ -37,8 +37,6 @@ This table is fundamental for defining access permissions and understanding the 
 - **Account ID**: The unique identifier of the account associated with the loan, linking the loan record to a specific client or account holder.
 - **Loan Amount**: The total amount of the loan issued, which is essential for financial calculations such as interest, repayment schedules, and loan servicing.
 
-This table is central to loan management processes, helping to track issued loans, manage repayment schedules, and assess the bank's lending portfolio.
-
 6. **Order Table**: This table stores details about the orders placed by the bank's clients. The key attributes include:
 
 - **Order ID**: A unique identifier for each order placed, ensuring proper tracking and management of client transactions.
@@ -46,8 +44,27 @@ This table is central to loan management processes, helping to track issued loan
 - **Order Date**: The date on which the order was issued, which helps in managing timelines and tracking order history.
 - **Order Description**: A brief description of the order, providing context about the type of transaction or service requested by the client (e.g., product purchase, service request, etc.).
 
-This table plays an essential role in managing client orders, facilitating order tracking, and integrating with other banking services such as payments, inventory, and service delivery.
+7. **Transaction**: This table contains information about the transactions made by the bank's clients. It includes the transaction ID, the account ID associated with the transaction, the transaction date, the 
+   type of transaction, and the transaction amount.
 
-7. **Transaction**: This table contains information about the transactions made by the bank's clients. It includes the transaction ID, the account ID associated with the transaction, the transaction date, the type of transaction, and the transaction amount.
+
+# Ad-hoc Data Analysis :
+
+The Czechoslovakia Bank wants to analyse its financial data to gain insights and make informed decisions. The bank needs to identify trends, patterns, and potential risks in its financial operations. They also want to explore the possibility of introducing new financial products or services based on their analysis.
+
+The bank has identified the following questions as important for their analysis:
+
+1. What is the demographic profile of the bank's clients and how does it vary across districts?
+2. How the banks have performed over the years. Give their detailed analysis year & month-wise.
+3. What are the most common types of accounts and how do they differ in terms of usage and profitability?
+4. Which types of cards are most frequently used by the bank's clients and what is the overall profitability of the credit card business?
+5. What are the major expenses of the bank and how can they be reduced to improve profitability?
+6. What is the bank’s loan portfolio and how does it vary across different purposes and client segments?
+7. How can the bank improve its customer service and satisfaction levels?
+8. Can the bank introduce new financial products or services to attract more customers and increase profitability?
+
+The objective of this analysis is to provide the Czechoslovakia Bank with actionable insights that can help them make informed decisions about their financial operations. The analysis will involve data cleaning, exploratory data analysis, and predictive modelling to identify patterns and trends in the data.
+
+
 
 
